@@ -1,0 +1,77 @@
+// Main
+
+main{
+    width: 100%;
+    height: 820px;
+
+    .divcurrseries{
+        width: 200px;
+        height: 50px;
+        margin-left: 90px;
+        background-color: #0282F9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p{
+            font-size: 20px;
+        }
+    }
+
+    .container{
+        width: 100%;
+        height: 660px;
+        background-color: black;
+        color: white;
+        padding-left: 100px;
+        padding-right: 100px;
+
+        .fumetti {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            padding-top: 50px;
+
+            .card {
+                width: 170px;
+                height: 220px;
+                margin: 5px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+
+                img{
+                    width: 150px;
+                    height: 160px;
+                }
+
+                h3{
+                    font-size: 15px;
+                    text-align: center;
+                    padding-top: 10px;
+                }
+            }
+        }
+
+        .contbutton{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 40px;
+
+            button{
+                background-color: #0282F9;
+                color: white;
+                padding: 7px 40px;
+            }
+        }
+    }
+
+    .contmerch{
+        width: 100%;
+        height: 160px;
+        background-color: #0282F9;
+    }
+}

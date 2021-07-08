@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 580px;
+}
+header .topheader {
+  width: 100%;
+  height: 30px;
+  background-color: #0282F9;
+}
+header .centerheader {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+header .centerheader .logo {
+  padding-right: 40px;
+}
+header .centerheader .logo img {
+  width: 90px;
+  height: 90px;
+}
+header .centerheader nav a {
+  text-decoration: none;
+  font-size: 12px;
+  padding: 7px;
+  color: #303030;
+}
+header .centerheader nav .navicon {
+  color: #0282F9;
+  font-size: 12px;
+}
+header .centerheader input {
+  margin-left: 50px;
+  color: #303030;
+  border: none;
+  border-bottom: 1px solid #0282F9;
+  text-align: right;
+}
+header .jumbotron {
+  width: 100%;
+  height: 400px;
+  background-image: url(../img/jumbotron.jpg);
+  background-size: cover;
+}
+
+main {
+  width: 100%;
+  height: 820px;
+}
+main .divcurrseries {
+  width: 200px;
+  height: 50px;
+  margin-left: 90px;
+  background-color: #0282F9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .divcurrseries p {
+  font-size: 20px;
+}
+main .container {
+  width: 100%;
+  height: 660px;
+  background-color: black;
+  color: white;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+main .container .fumetti {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+main .container .fumetti .card {
+  width: 170px;
+  height: 220px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .container .fumetti .card img {
+  width: 150px;
+  height: 160px;
+}
+main .container .fumetti .card h3 {
+  font-size: 15px;
+  text-align: center;
+  padding-top: 10px;
+}
+main .container .contbutton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+}
+main .container .contbutton button {
+  background-color: #0282F9;
+  color: white;
+  padding: 7px 40px;
+}
+main .contmerch {
+  width: 100%;
+  height: 160px;
+  background-color: #0282F9;
+}
+
+footer {
+  width: 100%;
+  height: 520px;
+}
+footer .topfooter {
+  width: 100%;
+  height: 400px;
+  background-image: url(../img/footer-bg.jpg);
+}
+footer .bottfooter {
+  width: 100%;
+  height: 120px;
+  background-color: #303030;
+}
