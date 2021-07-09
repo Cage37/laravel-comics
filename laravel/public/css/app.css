@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+.space {
+  padding-right: 300px;
+  padding-left: 300px;
+}
+
 header {
   width: 100%;
   height: 580px;
@@ -12,6 +17,16 @@ header .topheader {
   width: 100%;
   height: 30px;
   background-color: #0282F9;
+  font-size: 12px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 180px;
+}
+header .topheader p {
+  padding-left: 20px;
 }
 header .centerheader {
   width: 100%;
@@ -34,9 +49,16 @@ header .centerheader nav a {
   padding: 7px;
   color: #303030;
 }
+header .centerheader nav a:hover {
+  border-bottom: 4px solid #0282F9;
+}
 header .centerheader nav .navicon {
   color: #0282F9;
   font-size: 12px;
+}
+header .centerheader .active {
+  color: #0282F9 !important;
+  border-bottom: 4px solid #0282F9;
 }
 header .centerheader input {
   margin-left: 50px;
@@ -52,11 +74,12 @@ header .jumbotron {
   background-size: cover;
 }
 
-main {
+.maincontainer {
   width: 100%;
-  height: 820px;
+  height: 660px;
+  position: relative;
 }
-main .divcurrseries {
+.maincontainer .divcurrseries {
   width: 200px;
   height: 50px;
   margin-left: 90px;
@@ -64,11 +87,13 @@ main .divcurrseries {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  margin-top: -25px;
 }
-main .divcurrseries p {
+.maincontainer .divcurrseries p {
   font-size: 20px;
 }
-main .container {
+.maincontainer .container {
   width: 100%;
   height: 660px;
   background-color: black;
@@ -76,14 +101,14 @@ main .container {
   padding-left: 100px;
   padding-right: 100px;
 }
-main .container .fumetti {
+.maincontainer .container .comics {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   padding-top: 50px;
 }
-main .container .fumetti .card {
+.maincontainer .container .comics .card {
   width: 170px;
   height: 220px;
   margin: 5px;
@@ -91,30 +116,240 @@ main .container .fumetti .card {
   flex-direction: column;
   align-items: center;
 }
-main .container .fumetti .card img {
+.maincontainer .container .comics .card a {
+  text-decoration: none;
+  color: white !important;
+}
+.maincontainer .container .comics .card img {
   width: 150px;
   height: 160px;
 }
-main .container .fumetti .card h3 {
+.maincontainer .container .comics .card h3 {
   font-size: 15px;
   text-align: center;
   padding-top: 10px;
 }
-main .container .contbutton {
+.maincontainer .container .contbutton {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 40px;
 }
-main .container .contbutton button {
+.maincontainer .container .contbutton button {
   background-color: #0282F9;
   color: white;
   padding: 7px 40px;
 }
-main .contmerch {
+
+.contmerch {
   width: 100%;
   height: 160px;
   background-color: #0282F9;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.contmerch .dcinfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+}
+.contmerch .dcinfo img {
+  width: 60px;
+  height: 60px;
+  padding-right: 10px;
+}
+
+.maincontsingle {
+  width: 100%;
+  height: 900px;
+}
+.maincontsingle .divblue {
+  width: 100%;
+  height: 80px;
+  background-color: #0282F9;
+}
+.maincontsingle .divblue img {
+  width: 150px;
+  height: 250px;
+  margin-top: -180px;
+}
+.maincontsingle .divmainsingle {
+  width: 100%;
+  height: 440px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.maincontsingle .divmainsingle .leftmain {
+  width: 70%;
+  margin-right: 5%;
+}
+.maincontsingle .divmainsingle .leftmain h1 {
+  font-size: 25px;
+  font-weight: 200;
+  color: #003F5E;
+  margin-bottom: 25px;
+}
+.maincontsingle .divmainsingle .leftmain span {
+  color: #B5F788;
+}
+.maincontsingle .divmainsingle .leftmain .contgreen {
+  background-color: #55BA59;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 15px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  margin-bottom: 35px;
+}
+.maincontsingle .divmainsingle .leftmain .contgreen .itemgreen {
+  padding-left: 180px;
+  padding-right: 10px;
+  border-right: 1px solid black;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #B5F788;
+}
+.maincontsingle .divmainsingle .leftmain .desc {
+  font-size: 14px;
+  color: #565656;
+  line-height: 25px;
+}
+.maincontsingle .divmainsingle .rightmain {
+  width: 25%;
+}
+.maincontsingle .divmainsingle .rightmain h3 {
+  padding-left: 150px;
+  color: #565656;
+}
+.maincontsingle .divinfo {
+  width: 100%;
+  height: 380px;
+  background-color: #F6F6F6;
+  border-top: 1px solid #A3A3A3;
+}
+.maincontsingle .divinfo .divinfotop {
+  width: 100%;
+  height: 310px;
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+}
+.maincontsingle .divinfo .divinfotop .infoleft {
+  height: 100%;
+  width: 50%;
+}
+.maincontsingle .divinfo .divinfotop .infoleft h4 {
+  font-size: 22px;
+  font-weight: 200;
+  color: #003F5E;
+}
+.maincontsingle .divinfo .divinfotop .infoleft .contart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+  border-top: 1px solid #A3A3A3;
+  border-bottom: 1px solid #A3A3A3;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.maincontsingle .divinfo .divinfotop .infoleft .contart p {
+  width: 60%;
+  color: #003F5E;
+}
+.maincontsingle .divinfo .divinfotop .infoleft .contart span {
+  font-size: 12px;
+  color: #00A9D9;
+}
+.maincontsingle .divinfo .divinfotop .infoleft .contwritt {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-bottom: 1px solid #A3A3A3;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.maincontsingle .divinfo .divinfotop .infoleft .contwritt p {
+  width: 70%;
+  color: #003F5E;
+}
+.maincontsingle .divinfo .divinfotop .infoleft .contwritt span {
+  font-size: 12px;
+  color: #00A9D9;
+}
+.maincontsingle .divinfo .divinfotop .inforight {
+  height: 100%;
+  width: 50%;
+  padding-left: 50px;
+}
+.maincontsingle .divinfo .divinfotop .inforight h4 {
+  font-size: 22px;
+  font-weight: 200;
+  color: #003F5E;
+  padding-bottom: 20px;
+}
+.maincontsingle .divinfo .divinfotop .inforight .divspecsone {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #A3A3A3;
+  border-bottom: 1px solid #A3A3A3;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.maincontsingle .divinfo .divinfotop .inforight .divspecsone p {
+  width: 30%;
+  color: #003F5E;
+}
+.maincontsingle .divinfo .divinfotop .inforight .divspecsone .spanseries {
+  font-size: 15px;
+  color: #00A9D9;
+}
+.maincontsingle .divinfo .divinfotop .inforight .divspecstwo {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #A3A3A3;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.maincontsingle .divinfo .divinfotop .inforight .divspecstwo p {
+  width: 30%;
+  color: #003F5E;
+}
+.maincontsingle .divinfo .divinfotop .inforight .divspecstwo span {
+  font-size: 15px;
+  color: #565656;
+}
+.maincontsingle .divinfo .divinfotop .inforight .divspecsthree {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #A3A3A3;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.maincontsingle .divinfo .divinfotop .inforight .divspecsthree p {
+  width: 30%;
+  color: #003F5E;
+}
+.maincontsingle .divinfo .divinfotop .inforight .divspecsthree span {
+  font-size: 15px;
+  color: #565656;
+}
+.maincontsingle .divinfo .divinfobott {
+  width: 100%;
+  height: 70px;
 }
 
 footer {

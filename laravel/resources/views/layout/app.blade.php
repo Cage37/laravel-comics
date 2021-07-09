@@ -20,31 +20,30 @@
 
         <header>
             <div class="topheader">
-
+                <p>DC POWER VISA <i class="far fa-registered"></i></p>
+                <p>ADDITIONAL DC SITES <i class="fas fa-sort-down"></i></p>
             </div>
             <div class="centerheader">
                 <div class="logo">
-                    <img src="{{ asset('img/dc-logo.png') }}" alt="">
+                    <a href="{{ route('home') }}"><img src="{{ asset('img/dc-logo.png') }}" alt=""></a>
                 </div>
                 <nav>
-                    <a href="{{ route('home') }}">CHARACTERS</a>
-                    <a href="{{ route('comics') }}">COMICS</a>
-                    <a href="">MOVIES</a>
-                    <a href="">TV</a>
-                    <a href="">GAMES</a>
-                    <a href="">COLLECTIBLES</a>
-                    <a href="">VIDEOS</a>
-                    <a href="">FANS</a>
-                    <a href="">NEWS</a>
-                    <a href="">SHOP</a><i class="fas fa-sort-down navicon"></i>
+                    <a href="{{ route('characters') }}">CHARACTERS</a>
+                    <a href="{{ route('comics') }}" class="{{ Route::currentRouteName() === 'comics' ? 'active' : '' }}">COMICS</a>
+                    <a href="{{ route('movies') }}">MOVIES</a>
+                    <a href="{{ route('tv') }}">TV</a>
+                    <a href="{{ route('games') }}">GAMES</a>
+                    <a href="{{ route('collectibles') }}">COLLECTIBLES</a>
+                    <a href="{{ route('videos') }}">VIDEOS</a>
+                    <a href="{{ route('fans') }}">FANS</a>
+                    <a href="{{ route('news') }}">NEWS</a>
+                    <a href="{{ route('shop') }}">SHOP</a><i class="fas fa-sort-down navicon"></i>
                 </nav>
                 <div>
-                    <input type="text" placeholder="Search">
+                    <input type="text" placeholder="Search &#x1F50E;&#xFE0E;" >
                 </div>
             </div>
-            <div class="jumbotron">
-
-            </div>
+            <div class="jumbotron"></div>
         </header>
 
         <main>
@@ -52,14 +51,9 @@
         </main>
 
         <footer>
-            <div class="topfooter">
+            <div class="topfooter"></div>
 
-            </div>
-
-            <div class="bottfooter">
-
-            </div>
-
+            <div class="bottfooter"></div>
         </footer>
         
     </body>
