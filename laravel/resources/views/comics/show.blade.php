@@ -67,7 +67,20 @@
             </div>
         </div>
 
-        <div class="divinfobott"></div>
+        <div class="secinfobott">
+            <div class="divinfobott">
+                <p>DIGITAL COMICS</p>
+            </div>
+            <div class="divinfobott">
+                <p>SHOP DC</p>
+            </div>
+            <div class="divinfobott">
+                <p>COMIC SHOP LOCATOR</p>
+            </div>
+            <div class="divinfobott">
+                <p>SUBSCRIPTIONS</p>
+            </div>
+        </div>
     </div>
 
 </section>

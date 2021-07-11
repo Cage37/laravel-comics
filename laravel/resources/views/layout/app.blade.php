@@ -51,9 +51,63 @@
         </main>
 
         <footer>
-            <div class="topfooter"></div>
+            <div class="topfooter">
+                <div class="topfootleft">
+                    <div class="dcshop">
+                        <h3>DC COMICS</h3>
+                        <a href="">Characters</a>
+                        <a href="">Comics</a>
+                        <a href="">Movies</a>
+                        <a href="">TV</a>
+                        <a href="">Games</a>
+                        <a href="">Videos</a>
+                        <a href="">News</a>
+                        <h3 class="titleshop">SHOP</h3>
+                        <a href="">Shop DC</a>
+                        <a href="">Shop DC Collectibles</a>
+                    </div>
+                    <div class="dcfoot">
+                        <h3>DC</h3>
+                        <a href="">Terms Of Use</a>
+                        <a href="">Privacy Policy (New)</a>
+                        <a href="">Ad Choices</a>
+                        <a href="">Advertising</a>
+                        <a href="">Jobs</a>
+                        <a href="">Subscriptions</a>
+                        <a href="">Talent Workshop</a>
+                        <a href="">CPSC Certificates</a>
+                        <a href="">Ratings</a>
+                        <a href="">Shop Help</a>
+                        <a href="">Contact Us</a>
+                    </div>
+                    <div class="dcsites">
+                        <h3>SITES</h3>
+                        <a href="">DC</a>
+                        <a href="">MAD Magazine</a>
+                        <a href="">DC Kids</a>
+                        <a href="">DC Universe</a>
+                        <a href="">DC Power Visa</a>
+                    </div>
+                    <div>
+                        <p class="footinfo">All site content TM and <i class="far fa-copyright"></i> 2020 DC Entertaiment, unless otherwise <span>noted here</span>. All rights reserved. <br><span>Cookies Settings</span></p>
+                    </div>
+                </div>
+                <div class="topfootright"></div>
+            </div>
 
-            <div class="bottfooter"></div>
+            <div class="bottfooter">
+                <div class="bottfootleft">
+                    <button>SIGN-UP NOW!</button>
+                </div>
+                <div class="bottfootright">
+                    <p>FOLLOW US</p>
+                    <img src="{{ asset('img/footer-facebook.png') }}" alt="">
+                    <img src="{{ asset('img/footer-twitter.png') }}" alt="">
+                    <img src="{{ asset('img/footer-youtube.png') }}" alt="">
+                    <img src="{{ asset('img/footer-pinterest.png') }}" alt="">
+                    <img src="{{ asset('img/footer-periscope.png') }}" alt="">
+                </div>
+            </div>
         </footer>
         
     </body>

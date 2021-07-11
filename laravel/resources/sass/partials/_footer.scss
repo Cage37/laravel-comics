@@ -3,16 +3,144 @@
 footer{
     width: 100%;
     height: 520px;
+    
 
     .topfooter{
         width: 100%;
         height: 400px;
         background-image: url(../img/footer-bg.jpg);
+        display: flex;
+        flex-direction: row;
+
+        .topfootleft{
+            width: 50%;
+            height: 100%;
+            padding-left: 100px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding-top: 20px;
+            line-height: 25px;
+
+            .dcshop{
+                display: flex;
+                flex-direction: column;
+                margin-right: 30px;
+
+                h3{
+                    color: white;
+                    font-size: 15px;
+                }
+
+                .titleshop{
+                    margin-top: 25px;
+                }
+
+                a{
+                    text-decoration: none;
+                    color: #797979;
+                    font-size: 12px;
+                }
+            }
+
+            .dcfoot{
+                display: flex;
+                flex-direction: column;
+                margin-right: 30px;
+
+                h3{
+                    color: white;
+                    font-size: 15px;
+                }
+
+                a{
+                    text-decoration: none;
+                    color: #797979;
+                    font-size: 12px;
+                }
+            }
+
+            .dcsites{
+                display: flex;
+                flex-direction: column;
+
+                h3{
+                    color: white;
+                    font-size: 15px;
+                }
+
+                a{
+                    text-decoration: none;
+                    color: #797979;
+                    font-size: 12px;
+                }
+            }
+
+            .footinfo{
+                color: #797979;
+                font-size: 12px;
+
+                span{
+                    color: #0282F9;
+                }
+            }
+        }
+
+        .topfootright{
+            width: 50%;
+            height: 100%;
+            padding-right: 100px;
+            background-image: url(../../img/dc-logo-bg.png);
+            background-repeat: no-repeat;
+            background-position-y: center;
+        }
     }
 
     .bottfooter{
         width: 100%;
         height: 120px;
         background-color: #303030;
+        z-index: 1;
+        display: flex;
+        flex-direction: row;
+
+        .bottfootleft{
+            padding-left: 100px;
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            button{
+                font-size: 15px;
+                color: white;
+                background-color: #303030;
+                border: 1px solid #0282F9;
+                padding: 10px;
+            }
+        }
+
+        .bottfootright{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding-left: 200px;
+
+            p{
+                color: #0282F9;
+                font-size: 15px;
+                padding-right: 30px;
+                font-weight: 600;
+            }
+
+            img{
+                width: 30px;
+                height: 30px;
+                margin-right: 20px;
+            }
+        }
+
     }
 }
